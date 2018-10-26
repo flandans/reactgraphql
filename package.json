@@ -4,7 +4,7 @@
   "description": "open source universal react redux graphql boilerplate",
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "webpack --config webpack.server.js && webpack --config webpack.client.js",
+    "heroku-postbuild": "webpack --config webpack.prod.server.js && webpack --config webpack.prod.client.js",
     "build": "webpack --config webpack.server.js && webpack --config webpack.client.js",
     "serve": "node build/bundle.js",
     "dev": "npm-run-all --parallel dev:*",
